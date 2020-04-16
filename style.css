@@ -1,6 +1,171 @@
+/*import*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@700&display=swap');
+
+/*globalne kolory*/
+:root {
+  --primary: #22D2A0;
+  --secondary: #192824;
+  --background: #192824;
+  --green: #1FC11B;
+  --yellow: #FFD913;
+  --orange: #FF9C55;
+  --red: #FF5555;
+}
+
+
+body {
+        background: var(--background);
+        font-family: 'Archivo', sans-serif;
+        color: var(--primary);
+}
+
+
+/*przysicki*/
+
+.buttons {
+    grid-column: 1;
+    grid-row: 2;
+    min-width: 100px;
+    min-height: 50px;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 2em;
+    margin-left: 40px;
+}
+
+.button {
+    display: inline-block;
+    border: 3px solid var(--primary);
+    padding: 1rem 2rem;
+    margin: 3px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: 0;
+    transition:  0.4s ;
+}
+
+#white:hover {
+    color: var(--primary);
+    text-shadow: 0px 0px 2px var(--primary);
+}
+#color:hover {
+    color: var(--primary);
+    text-shadow: 0px 0px 2px var(--primary);
+}
+#reset:hover {
+    color: var(--primary);
+    text-shadow: 0px 0px 2px var(--primary);
+}
+#gridNumber:hover {
+    color: var(--primary);
+    text-shadow: 0px 0px 2px var(--primary);
+}
+
+#white:hover {
+    border: 3px solid var(--green);
+    text-shadow: 0px 0px 2px var(--primary);
+}
+
+#white:active {
+box-shadow: 0px 0px 5px -3px var(--green);
+}
+
+#color:hover {
+    border: 3px solid var(--yellow);
+}
+
+#color:active {
+    box-shadow: 0px 0px 5px -3px var(--yellow);
+}
+
+#reset:hover {
+    border: 3px solid var(--orange);
+}
+
+#reset:active {
+    box-shadow: 0px 0px 5px -3px var(--orange);
+    }
+
+#gridNumber:hover {
+    border: 3px solid var(--red);
+}
+
+#gridNumber:active {
+    box-shadow: 0px 0px 5px -3px var(--red);
+    }
+
+
+
+
+
+
+
+
+
+
+
+.title {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 300px;
+    min-height: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header {
+    color: var(--primary);
+    -webkit-transition: 0.4s;
+    max-width: 420px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: 'Archivo', sans-serif;
+    font-size: 3.5rem;
+    padding: 10px;
+    border: 3px solid var(--primary);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+      20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+      30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+      40px -40px 0 -3px var(--background), 40px -40px var(--red);
+}
+
+.header:hover {
+    color: var(--red);
+}
+
 .wrap {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr ;
     
 }
+
+
+
+.container {
+    grid-column: 1;
+    grid-row: 3;
+    min-width: 500px;
+    min-height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    border: 3px solid var(--primary);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+      20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+      30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+      40px -40px 0 -3px var(--background), 40px -40px var(--red);
+      animation: shadow-wave 1s ease infinite;
+  }
+
+}
+
+
+
