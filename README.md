@@ -1,4 +1,4 @@
-This project wa made thanks to https://www.theodinproject.com 
+Project made thanks to https://www.theodinproject.com 
 
 See my solution at https://kaliberpoziomka.github.io/etchAsketch/
 
