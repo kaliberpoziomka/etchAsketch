@@ -48,7 +48,7 @@ function gameReset() {
 //White
 whiteButton.addEventListener('click', startWhite, false)
 function startWhite(){
-    quantity = prompt('Podaj liczbę pól');
+    quantity = prompt('Enter number from 2 to 64:');
     color = 'ffffff';
     makeCells(quantity, color);
  }
@@ -57,7 +57,7 @@ function startWhite(){
 //Random
  randomButton.addEventListener('click', startRandom, false);
  function startRandom(){
-     quantity = prompt('Podaj liczbę pól');
+     quantity = prompt('Enter number from 2 to 64:');
      color = palette[Math.floor(Math.random() * palette.length)];
      makeCells(quantity, color);
   }
@@ -66,7 +66,7 @@ function startWhite(){
 rainbowButton.addEventListener('click', startRainbow, false);
 
   function startRainbow() {
-    let quantity = prompt('Podaj liczbę pól');
+    let quantity = prompt('Enter number from 2 to 64:');
     let size = 500 / quantity;
 
     for(let i = 0; i < quantity; i++) {
